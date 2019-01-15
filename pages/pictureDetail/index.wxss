@@ -1,0 +1,43 @@
+/* pages/ocrDetail/index.wxss */
+.container{
+  min-height: 100vh;
+  background-color: #fff;
+  padding-bottom: 20rpx;
+}
+.image{
+  width: 100vw;
+  min-height: 500rpx;
+  background-color: #f2f2f2;
+}
+.image image{
+  margin: 30rpx 0; 
+  width: 500rpx;
+  height: 300rpx;
+}
+.common-btn{
+  width: 60vw;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.show-item{
+  line-height: 50rpx;
+}
+.show-item .title{
+  width: 140rpx;
+  color: #666;
+}
+.show-item .message{
+  color: #454545;
+}
+
+.img-list{
+  white-space: nowrap;
+}
+.img-item{
+  text-align: center;
+  display: inline-block;
+  min-width: 160rpx;
+  height: 200rpx;
+  font-size: 28rpx;
+}

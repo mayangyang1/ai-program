@@ -1,0 +1,76 @@
+<view class="container">
+  <view class="common-con">
+    <view class="header pdl20">OCR</view>
+    <view class="common-list flex-fs">
+      <view class="common-item" data-id="0" bindtap='bindNavigateTo'>
+        <image src="/images/identity.png" mode="widthFix"></image>
+        <view class="msg mgt20">身份证</view>
+      </view>
+      <view class="common-item" data-id="1" bindtap='bindNavigateTo'>
+        <image src="/images/driver.png" mode="widthFix"></image>
+        <view class="msg mgt20">驾驶证</view>
+      </view>
+      <view class="common-item" data-id="2" bindtap='bindNavigateTo'>
+        <image src="/images/bank.png" mode="widthFix"></image>
+        <view class="msg mgt20">银行卡</view>
+      </view>
+      <view class="common-item" data-id="3" bindtap='bindNavigateTo'>
+        <image src="/images/car.png" mode="widthFix"></image>
+        <view class="msg mgt20">车牌号</view>
+      </view>
+      <view class="common-item" data-id="4" bindtap='bindNavigateTo'>
+        <image src="/images/card.png" mode="widthFix"></image>
+        <view class="msg mgt20">名片</view>
+      </view>
+      <view class="common-item" data-id="5" bindtap='bindNavigateTo'>
+        <image src="/images/license.png" mode="widthFix"></image>
+        <view class="msg mgt20">行驶证</view>
+      </view>
+      <view class="common-item">
+        
+      </view>
+      <view class="common-item">
+        
+      </view>
+    </view>
+  </view>
+  <view class="common-con">
+    <view class="header pdl20">图片特效</view>
+    <view class="common-list flex-fs">
+      <view class="common-item" data-id="0" bindtap='bindToDetail'>
+        <image src="/images/peopleFilter.png" mode="widthFix"></image>
+        <view class="msg mgt20">人物滤镜</view>
+      </view>
+      <!-- <view class="common-item" data-id="4" bindtap='bindToDetail'>
+        <image src="/images/filter.png" mode="widthFix"></image>
+        <view class="msg mgt20">风景滤镜</view>
+      </view> -->
+      <view class="common-item" data-id="1" bindtap='bindToDetail'>
+        <image src="/images/beauty.png" mode="widthFix"></image>
+        <view class="msg mgt20">人脸美妆</view>
+      </view>
+      <view class="common-item" data-id="2" bindtap='bindToDetail'>
+        <image src="/images/makeup.png" mode="widthFix"></image>
+        <view class="msg mgt20">人脸变装</view>
+      </view>
+      <view class="common-item" data-id="3" bindtap='bindToDetail'>
+        <image src="/images/dressing.png" mode="widthFix"></image>
+        <view class="msg mgt20">大头贴</view>
+      </view>
+      <view class="common-item" data-id="5" bindtap='bindToDetail'>
+        <image src="/images/yanling.png" mode="widthFix"></image>
+        <view class="msg mgt20">颜龄检测</view>
+      </view>
+     
+      <view class="common-item">
+        
+      </view>
+      <view class="common-item">
+        
+      </view>
+      <view class="common-item">
+        
+      </view>
+    </view>
+  </view>
+</view>

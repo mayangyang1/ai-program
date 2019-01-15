@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ocrDetail/index",
+    "pages/pictureDetail/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1fbba6",
+    "navigationBarTitleText": "AI识别",
+    "navigationBarTextStyle": "white"
+  }
+}

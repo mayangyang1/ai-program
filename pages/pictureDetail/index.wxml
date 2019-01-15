@@ -1,0 +1,24 @@
+<view class="container">
+  <view class='image row'>
+    <image mode='widthFix' src='{{img}}'></image>
+  </view>
+  <view class='message-show pdlr20 pdt20 mgl20'>
+    <view class='show-item flex-fs' wx:for="{{messageList}}" wx:key="index">
+      <view class='title mglr20 pdl20'>{{item.key}}</view>
+      <view class='message mgl20'>{{item.value}}</view>
+    </view>
+  </view>
+  <view wx:if="{{isShow}}">
+    <scroll-view scroll-x>
+    <view class="img-list">
+      <block wx:for="{{selectImgageList}}" wx:key="{{index}}">
+        <view class='img-item mgr20' data-id='{{index}}' bindtap='bindSetPicStyle'>
+          <image src="{{'data:image/png;base64,' + base64Img}}" mode='widthFix' style='width:100rpx;'></image>
+          <view>{{item}}</view>
+        </view>
+      </block>
+    </view>
+    </scroll-view>
+  </view>
+  <view class='common-btn main-bg-color' bindtap='bindtaps'>上传图片</view>
+</view>

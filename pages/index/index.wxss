@@ -1,0 +1,66 @@
+.container{
+  min-height: 100vh;
+}
+.common-con .header{
+  font-size: 30rpx;
+  color: #454545;
+  line-height: 90rpx;
+}
+.common-list{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;
+}
+.common-item{
+  flex: 0 0 25%;
+  padding: 30rpx 0;
+  border-right: 1px solid #dfdfdf;
+  background-color: #fff;
+  margin-bottom: 1px;
+  box-sizing: border-box;
+  min-height: 185rpx;
+}
+
+.common-item image {
+  width: 65rpx;
+  height: 65rpx;
+  display: block;
+  margin: 0 auto;
+}
+.common-item .msg{
+  text-align: center;
+}
+.movie-con{
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20rpx;
+}
+.movie-con .header{
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  color: #ddd;
+  margin-bottom: 20rpx;
+}
+.scroll-to-x{
+  width: 100vw;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.movie-item{
+  display: inline-block;
+  width: 300rpx;
+  height: auto;
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.movie-item .name{
+  width: 300rpx;
+}
+.movie-item image{
+  width: 200rpx;
+  height: 280rpx;
+}
