@@ -11,5 +11,6 @@
     "navigationBarBackgroundColor": "#1fbba6",
     "navigationBarTitleText": "AI识别",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
