@@ -1,6 +1,6 @@
 <view class="container">
   <view class='image row'>
-    <image mode='widthFix' src='{{img}}'></image>
+    <image mode='widthFix' bindtap="bindSeeImage" src='{{img}}'></image>
   </view>
   <view class='message-show pdlr20 pdt20 mgl20'>
     <view class='show-item flex-fs' wx:for="{{messageList}}" wx:key="index">

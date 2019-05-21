@@ -1,5 +1,6 @@
 .container{
   min-height: 100vh;
+  padding-bottom: 20rpx;
 }
 .common-con .header{
   font-size: 30rpx;
@@ -63,4 +64,8 @@
 .movie-item image{
   width: 200rpx;
   height: 280rpx;
+}
+
+.common{
+  color: red;
 }

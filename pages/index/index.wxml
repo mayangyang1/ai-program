@@ -26,11 +26,13 @@
         <image src="/images/license.png" mode="widthFix"></image>
         <view class="msg mgt20">行驶证</view>
       </view>
-      <view class="common-item">
-        
+      <view class="common-item" data-id="6" bindtap='bindNavigateTo'>
+        <image src="/images/write.png" mode="widthFix"></image>
+        <view class="msg mgt20">手写体</view>
       </view>
-      <view class="common-item">
-        
+      <view class="common-item" data-id="7" bindtap='bindNavigateTo'>
+        <image src="/images/common.png" mode="widthFix"></image>
+        <view class="msg mgt20">通用</view>
       </view>
     </view>
   </view>
@@ -70,6 +72,27 @@
       </view>
       <view class="common-item">
         
+      </view>
+    </view>
+  </view>
+  <view class="common-con">
+    <view class="header pdl20">图片识别</view>
+    <view class="common-list flex-fs">
+      <view class="common-item" data-id="0" bindtap='bindToImageDetail'>
+        <image src="/images/seeImage.png" mode="widthFix"></image>
+        <view class="msg mgt20">看图说话</view>
+      </view>
+      <view class="common-item" data-id="1" bindtap='bindToImageDetail'>
+        <image src="/images/food.png" mode="widthFix"></image>
+        <view class="msg mgt20">美食识别</view>
+      </view>
+      <view class="common-item" data-id="2" bindtap='bindToImageDetail'>
+        <image src="/images/scene.png" mode="widthFix"></image>
+        <view class="msg mgt20">场景识别</view>
+      </view>
+      <view class="common-item" data-id="3" bindtap='bindToImageDetail'>
+        <image src="/images/object.png" mode="widthFix"></image>
+        <view class="msg mgt20">物体识别</view>
       </view>
     </view>
   </view>

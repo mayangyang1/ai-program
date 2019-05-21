@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/ocrDetail/index",
     "pages/pictureDetail/index",
+    "pages/distinguishDetail/index",
     "pages/logs/logs"
   ],
   "window": {

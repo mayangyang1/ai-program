@@ -12,7 +12,6 @@ Page({
   },
   bindtaps() {
     const that = this;
-    let timeStamp = parseInt((new Date().getTime() / 1000));
     wx.chooseImage({
       count: 1, // 默认9
       //sizeType: ['original', 'compressed'],
@@ -45,8 +44,11 @@ Page({
                 that.dirverAi(response.data, 0, that);
                 break;
               case 6:
-               
+               that.writeCardAi(response.data, that)
                 break;
+              case 7:
+                that.generalCardAi(response.data, that)
+              break;
             }
             
           }
@@ -205,14 +207,75 @@ Page({
     })
   },
   /***************************************名片识别 end ********************************************** */
- 
+ /***************************************手写体检测识别 start ******************************************** */
+ writeCardAi(base64Image, that) {
+   api.writeRequest(base64Image, {
+     success(result) {
+       var code = result.ret;
+       if (code == 0) {
+         wx.hideLoading();
+         let msgList = result.data.item_list;
+         let messageList = []
+         msgList.forEach((_item) => {
+           let obj = {};
+           obj.key = _item.item;
+           obj.value = _item.itemstring
+           messageList.push(obj);
+         })
+         that.setData({
+           img: 'data:image/png;base64,' + base64Image,
+           messageList: messageList
+         })
+       } else {
+         wx.hideLoading();
+         wx.showModal({
+           title: '错误提示',
+           content: result.msg,
+           showCancel: false
+         })
+       }
+     }
+   })
+ },
+ /***************************************手写体检测识别 end ********************************************** */
+ /***************************************通用检测识别 start ******************************************** */
+ generalCardAi(base64Image, that) {
+   api.generalRequest(base64Image, {
+     success(result) {
+       var code = result.ret;
+       if (code == 0) {
+         wx.hideLoading();
+         let msgList = result.data.item_list;
+         let messageList = []
+         msgList.forEach((_item) => {
+           let obj = {};
+           obj.key = _item.item;
+           obj.value = _item.itemstring
+           messageList.push(obj);
+         })
+         that.setData({
+           img: 'data:image/png;base64,' + base64Image,
+           messageList: messageList
+         })
+       } else {
+         wx.hideLoading();
+         wx.showModal({
+           title: '错误提示',
+           content: result.msg,
+           showCancel: false
+         })
+       }
+     }
+   })
+ },
+ /***************************************通用检测识别 end ********************************************** */
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     this.data.type = Number(options.id);
-    let title = '身份证识别'
+    let title = ''
     switch(this.data.type) {
       case 0 :
         title= '身份证识别'
@@ -233,8 +296,11 @@ Page({
         title = '行驶证识别'
         break;
       case 6:
-        title = '行驶证识别'
+        title = '手写体识别'
         break;
+      case 7:
+        title = '通用OCR'
+      break;
 
 
     }

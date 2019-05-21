@@ -1,0 +1,4 @@
+<template name='tem'>
+<view class='common'>我是个性化模板</view>
+<input bindinput='bindInput'></input>
+</template>

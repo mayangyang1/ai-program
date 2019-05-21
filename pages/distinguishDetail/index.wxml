@@ -1,0 +1,12 @@
+<view class="container">
+  <view class='image row'>
+    <image mode='widthFix' src='{{img}}'></image>
+  </view>
+  <view class='message-show pdlr20 pdt20 mgl20'>
+    <view class='show-item flex-fs' wx:for="{{messageList}}" wx:key="index">
+      <view class='title mglr20 pdl20'>{{item.key}}</view>
+      <view class='message mgl20'>{{item.value}}</view>
+    </view>
+  </view>
+  <view class='common-btn main-bg-color' bindtap='bindtaps'>上传图片</view>
+</view>

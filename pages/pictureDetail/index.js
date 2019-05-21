@@ -13,6 +13,13 @@ Page({
     isShow: false,
     msg: '',
   },
+  bindSeeImage() {//预览图片
+    const that = this;
+    wx.previewImage({
+      current: that.data.img,
+      urls:[that.data.img]
+    })
+  },
   bindtaps() {
     const that = this;
     wx.chooseImage({
