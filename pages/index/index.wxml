@@ -43,10 +43,10 @@
         <image src="/images/peopleFilter.png" mode="widthFix"></image>
         <view class="msg mgt20">人物滤镜</view>
       </view>
-      <view class="common-item" data-id="4" bindtap='bindToDetail'>
+      <!-- <view class="common-item" data-id="4" bindtap='bindToDetail'>
         <image src="/images/filter.png" mode="widthFix"></image>
         <view class="msg mgt20">风景滤镜</view>
-      </view>
+      </view> -->
       <view class="common-item" data-id="1" bindtap='bindToDetail'>
         <image src="/images/beauty.png" mode="widthFix"></image>
         <view class="msg mgt20">人脸美妆</view>
